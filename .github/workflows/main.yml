@@ -4,8 +4,12 @@ on:
   push:
     branches:
       - master
+  pull_request:    
+    branches: [master]    
+    types: [opened, synchronize]
 
 jobs:
+  if: ${{ github.event_name == 'push' }}
   build:
     runs-on: ubuntu-latest
     steps:
