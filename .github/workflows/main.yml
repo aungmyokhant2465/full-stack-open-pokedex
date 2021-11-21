@@ -17,3 +17,4 @@ jobs:
           heroku_email: "aungmyokhant2465@gmail.com"
           healthcheck: "https://intense-bayou-23133.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
