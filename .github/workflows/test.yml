@@ -25,4 +25,5 @@ jobs:
       - name: check skip message
         env:
           SKIP: ${{ join(github.event.commits.*.message, ', ') }}
+          HERE: ${{ contains($SKIP, '#skip') }}
         run: echo "$SKIP"
