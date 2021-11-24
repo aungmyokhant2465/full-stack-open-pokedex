@@ -6,8 +6,8 @@ on:
   pull_request:    
     branches: [master]    
     types: [opened, synchronize]
-  schedule:
-    - cron:  '* 11-12 * * *'
+  # schedule:
+  #   - cron:  '* 11-12 * * *'
 
 jobs:
   check:
