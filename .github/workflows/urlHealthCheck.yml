@@ -9,7 +9,7 @@ jobs:
       uses: jtalk/url-health-check-action@v2
       with:
         # Check the following URLs one by one sequentially
-        url: https://intense-bayou-23134.herokuapp.com/health
+        url: https://intense-bayou-23133.herokuapp.com/health
         # Follow redirects, or just report success on 3xx status codes
         follow-redirect: false # Optional, defaults to "no"
         # Fail this action after this many failed attempts
